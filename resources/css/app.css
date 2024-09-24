@@ -1,0 +1,138 @@
+@import url("https://fonts.bunny.net/css?family=roboto:300,400,500,700|montserrat:300,400,500,600,700");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        @apply text-sm;
+    }
+}
+
+@layer components {
+    .header-contact-hidden {
+        @apply py-0 invisible h-0;
+    }
+    .wrapper-product {
+        @apply max-sm:mb-4;
+    }
+    .wrapper-product h3 {
+        @apply text-3xl font-montserrat;
+    }
+    .wrapper-product .divide {
+        @apply w-20 h-0.5 bg-black/80 mt-6;
+    }
+    .wrapper-product .text-description {
+        @apply mt-8 text-lg font-light;
+    }
+    .text-description h5 {
+        @apply text-lg font-medium mb-3 text-orange-500;
+    }
+    .text-description p {
+        @apply mb-3;
+    }
+    .text-description .btn {
+        @apply flex w-fit mt-4 py-2.5 px-6 text-sm font-medium border-2 text-gray-500 border-gray-400 hover:opacity-70 transition duration-150 ease-out;
+    }
+    .tabs-service {
+        @apply mb-4 border-b border-gray-200 dark:border-gray-700;
+    }
+    .tabs-service .tabs {
+        @apply flex flex-wrap justify-center -mb-px text-sm font-medium text-center;
+    }
+    .tabs-service .tabs li {
+        @apply max-sm:w-[45%];
+    }
+    .tabs-service .tabs li:not(:last-child) {
+        @apply md:me-2;
+    }
+    .tabs-service .tabs li button {
+        @apply inline-block p-[2.3rem] md:p-4 border-b-2 rounded-t-lg max-sm:w-full;
+    }
+    .tabs-service .tabs li:not(:first-child) button {
+        @apply hover:text-blue-600 hover:border-blue-600;
+    }
+    .content-service {
+        @apply bg-black/80;
+    }
+    .content-service .wrapper {
+        @apply grid md:grid-cols-2 md:gap-10 place-items-center;
+    }
+    .content-service .wrapper-product .divide {
+        @apply bg-white;
+    }
+    .content-service .wrapper-product {
+        @apply text-white;
+    }
+    .content-service .wrapper-product p {
+        @apply text-sm;
+    }
+    .content-service .wrapper-product ol {
+        @apply text-sm list-decimal pl-4 mb-2;
+    }
+    .content-service .wrapper-product #btn-covid {
+        @apply border-white/80 text-white/80;
+    }
+    .about-us .title {
+        @apply font-montserrat text-2xl md:text-4xl mb-4;
+    }
+    .about-us .subtitle {
+        @apply font-montserrat text-xl md:text-3xl mb-4;
+    }
+    .about-us .divide {
+        @apply w-20 h-0.5 bg-black/80 mt-6 mb-10;
+    }
+    .about-us img {
+        @apply max-w-full w-auto h-auto max-sm:mb-6 brightness-[95%];
+    }
+    .about-us .description {
+        @apply mt-10;
+    }
+    .about-us p {
+        @apply text-lg font-light mb-3;
+    }
+    .about-us a {
+        @apply text-orange-500 font-normal;
+    }
+    .article {
+        @apply grid grid-cols-2 md:gap-10;
+    }
+    .article .item img {
+        @apply max-w-full w-full h-[300px] object-cover mx-auto brightness-[90%];
+    }
+    .article .item .description {
+        @apply mt-4 text-black/80;
+    }
+    .article .item .description h3 {
+        @apply text-3xl font-montserrat font-light mb-2;
+    }
+    .article .item .description .tags {
+        @apply text-sm font-light uppercase;
+    }
+    .article .item .description .text {
+        @apply line-clamp-4 mt-4 mb-4;
+    }
+}
+
+.square {
+    background-color: #ffffff;
+    margin: auto;
+    border: #f4f4f4 solid 1px;
+    position: relative;
+    border-radius: 10px;
+}
+.square::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    background-color: #ffffff;
+    bottom: -8px;
+    left: 46.5%;
+    border-top: #ddd solid 1px;
+    border-left: #ddd solid 1px;
+    transform: rotate(225deg);
+}
