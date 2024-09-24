@@ -10,4 +10,6 @@ note: jangan edit langsung tanpa npm run watch / dev (app.css, main.css, app.js,
 ## Before Commit
  - npm run prod
 
+## Display Image
+
 <img src="./screenshot.png" alt="Image Website">
